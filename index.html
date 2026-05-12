@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iPad Prompter</title>
+  <meta name="description" content="A professional iPad teleprompter for writing, syncing, mirroring, and presenting scripts.">
+  <link rel="icon" href="assets/AppStoreIcon-1024.png">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #020403;
+      --panel: #080b0f;
+      --text: #f8fffc;
+      --muted: #c5d4ce;
+      --accent: #32e69a;
+      --line: rgba(248, 255, 252, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    main {
+      width: min(1040px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 72px 0 56px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 84px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .brand img {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+    }
+
+    .links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      padding-bottom: 72px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      max-width: 820px;
+      margin: 0;
+      font-size: clamp(48px, 8vw, 96px);
+      line-height: 0.95;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 700px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(20px, 3vw, 28px);
+    }
+
+    .actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #02110b;
+      text-decoration: none;
+      font-weight: 800;
+    }
+
+    .button.secondary {
+      background: rgba(248, 255, 252, 0.1);
+      color: var(--text);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      padding: 54px 0;
+    }
+
+    .feature {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    footer {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    @media (max-width: 760px) {
+      main {
+        width: min(100% - 28px, 1040px);
+        padding-top: 28px;
+      }
+
+      nav {
+        align-items: flex-start;
+        margin-bottom: 56px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav aria-label="Main navigation">
+      <a class="brand" href="./">
+        <img src="assets/AppStoreIcon-1024.png" alt="">
+        <span>iPad Prompter</span>
+      </a>
+      <div class="links">
+        <a href="support/">Support</a>
+        <a href="privacy-policy/">Privacy</a>
+        <a href="https://github.com/felipehertzer/teleprompter">GitHub</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <h1>Professional teleprompter for iPad.</h1>
+      <p class="lead">Write, sync, mirror, and present scripts with a focused prompt display built for creators, presenters, and production teams.</p>
+      <div class="actions">
+        <a class="button" href="support/">Get Support</a>
+        <a class="button secondary" href="privacy-policy/">Privacy Policy</a>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Features">
+      <article class="feature">
+        <h2>Script Library</h2>
+        <p>Create, edit, search, duplicate, and save scripts before opening prompt mode.</p>
+      </article>
+      <article class="feature">
+        <h2>Prompt Mode</h2>
+        <p>Use smooth auto-scroll, full-screen controls, cue line, text sizing, spacing, and custom colors.</p>
+      </article>
+      <article class="feature">
+        <h2>Rig Ready</h2>
+        <p>Mirror horizontally for beam-splitter rigs and vertically for inverted mounts.</p>
+      </article>
+    </section>
+
+    <footer>
+      <span>&copy; 2026 Felipe Hertzer</span>
+      <a href="support/">Support</a>
+      <a href="privacy-policy/">Privacy Policy</a>
+    </footer>
+  </main>
+</body>
+</html>

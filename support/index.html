@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iPad Prompter Support</title>
+  <meta name="description" content="Support for iPad Prompter.">
+  <link rel="icon" href="../assets/AppStoreIcon-1024.png">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f5f8;
+      --text: #111318;
+      --muted: #5d6470;
+      --accent: #17b97d;
+      --panel: #ffffff;
+      --line: rgba(17, 19, 24, 0.12);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #020403;
+        --text: #f8fffc;
+        --muted: #c5d4ce;
+        --accent: #32e69a;
+        --panel: #080b0f;
+        --line: rgba(248, 255, 252, 0.16);
+      }
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(820px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(42px, 7vw, 72px);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 34px 0 8px;
+      font-size: 24px;
+      letter-spacing: 0;
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .panel {
+      margin-top: 28px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <nav aria-label="Main navigation">
+      <a href="../">iPad Prompter</a>
+      <a href="../privacy-policy/">Privacy Policy</a>
+    </nav>
+
+    <h1>Support</h1>
+    <p>Need help with iPad Prompter? Use the GitHub support link below for questions, bug reports, and feature requests.</p>
+
+    <section class="panel">
+      <h2>Contact</h2>
+      <p><a href="https://github.com/felipehertzer/teleprompter/issues">Open a support issue on GitHub</a></p>
+      <p>Source repository: <a href="https://github.com/felipehertzer/teleprompter">github.com/felipehertzer/teleprompter</a></p>
+    </section>
+
+    <h2>iCloud Sync</h2>
+    <p>iPad Prompter uses the Apple Account already signed in on your iPad. There is no separate login inside the app.</p>
+    <ol>
+      <li>Open the Settings app on iPad.</li>
+      <li>Sign in with an Apple Account.</li>
+      <li>Enable iCloud Drive.</li>
+      <li>Make sure iCloud is enabled for iPad Prompter.</li>
+      <li>Reopen iPad Prompter and tap Refresh iCloud.</li>
+    </ol>
+    <p>If iCloud is unavailable, scripts continue to save locally on the device.</p>
+
+    <h2>Prompting</h2>
+    <ul>
+      <li>Use Play or Pause to control auto-scroll.</li>
+      <li>Use speed controls to tune reading pace.</li>
+      <li>Use horizontal mirror for beam-splitter teleprompter rigs.</li>
+      <li>Use vertical mirror for inverted mounts.</li>
+      <li>Tap the prompt area in full-screen mode to show or hide controls.</li>
+    </ul>
+  </main>
+</body>
+</html>
