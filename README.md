@@ -1,6 +1,6 @@
-# iPad Prompter Website
+# Teleprompter for Video Website
 
-Public GitHub Pages site for iPad Prompter.
+Public GitHub Pages site for Teleprompter for Video.
 
 Expected pages:
 
