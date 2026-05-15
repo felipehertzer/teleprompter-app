@@ -1,6 +1,6 @@
-# Teleprompter for Video Website
+# Script Teleprompter Website
 
-Public GitHub Pages site for Teleprompter for Video.
+Public GitHub Pages site for Script Teleprompter.
 
 Expected pages:
 
